@@ -1,12 +1,10 @@
-{% extends "inventory/layout.html" %}
-<!--  -->
+{% extends "inventory/layout.html" %} 
+
 {% block body %}
-<!--  -->
 
-<h3>Infos For: {{ eng_id.eng_name }} ({{ eng_id.eng_code }})</h3>
-<ul>
-    <li>Chantier: {{ eng_id.ch_name }}</li>
-</ul>
-
-
+    <h3>Infos For: {{ eng_id.eng_name }} ({{ eng_id.eng_code }})</h3>
+    <ul>
+        <li>Chantier: {{ eng_id.ch_name }}</li>
+        <a href="{% url 'index' %}">Back to Engins List</a>
+    </ul>
 {% endblock %}

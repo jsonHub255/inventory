@@ -4,9 +4,7 @@
 <h1>List of Chantier infos:</h1>
 <ul>
     {% for engin in engins %}
-    <li>{{ engin.eng_name }}</li>
-    <li>{{ engin.eng_code }}</li>
-    <li>{{ engin.ch_name }}</li>
+    <li><a href="{% url 'engins' engin.id %}">{{ engin.eng_name }} ({{engin.eng_code}})</a></li>
     {% endfor%}
 </ul>
 {% endblock %}
