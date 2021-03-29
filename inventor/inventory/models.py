@@ -7,6 +7,7 @@ class Engin(models.Model):
     ch_name = models.CharField(max_length=64)
     eng_date = models.DateField
     
+    # Formatted String formt to show data.
     def __str__(self):
         return f"{id} For: name: {self.eng_name} Code: {self.eng_code} Chantier: {self.ch_name} DATE: {self.eng_date}"
     
