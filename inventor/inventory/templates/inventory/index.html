@@ -2,4 +2,11 @@
 <!-- block body -->
 {% block body%}
 <h1>List of Chantier infos:</h1>
+<ul>
+    {% for engin in engins %}
+    <li>{{ engin.eng_name }}</li>
+    <li>{{ engin.eng_code }}</li>
+    <li>{{ engin.ch_name }}</li>
+    {% endfor%}
+</ul>
 {% endblock %}
